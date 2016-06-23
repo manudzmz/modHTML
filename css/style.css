@@ -1,8 +1,31 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	margin: 0px;
 }
 
 @font-face{
 	font-family: batman;
 	src: url(../fonts/batmfo__.ttf);
+}
+
+.navbar {
+	position: fixed;
+	background-color: #F7F7F7;
+	top: 0px;
+	width: 100%;
+}
+
+.navbar .navbar-list{
+	list-style-type: none;
+	margin: 0px;
+}
+
+.navbar .navbar-list .navbar-item{
+	display: inline;
+}
+
+.navbar .navbar-list .navbar-item a{
+	text-decoration: none;
+	padding: 20px;
+	display: inline-block;
 }
