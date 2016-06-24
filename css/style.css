@@ -25,10 +25,15 @@ body {
 	display: inline;
 }
 
-.navbar .navbar-list .navbar-item a{
+.navbar .navbar-list .navbar-item a {
 	text-decoration: none;
 	display: inline-block;
 	padding: 20px;
+}
+
+.navbar .navbar-list .navbar-item a:hover {
+	color: #F7F7F7;
+	background-color: #A4A4A4;
 }
 
 .title-img {
@@ -56,4 +61,18 @@ body {
 	text-align: center;
 	font-family: batman;
 	font-size: 28px;
+}
+
+.about-me .batman-photo{
+	max-width: 50%;
+	float: left;
+}
+
+.about-me .batman-info{
+	max-width: 50%;
+	float: right;
+}
+
+.about-me {
+	overflow: auto;
 }
