@@ -1,6 +1,11 @@
+* {
+	box-sizing: border-box;;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0px;
+	overflow-x: hidden;
 }
 
 @font-face{
@@ -75,4 +80,21 @@ body {
 
 .about-me {
 	overflow: auto;
+}
+
+.team-member-photo img {
+	max-width: 100%;
+	height: 300px;
+	border-radius: 50%;
+}
+
+.row {
+	padding: 50px;
+}
+
+.section-content-reverse {
+	background-color: rgba(0, 0, 0, 0.92);
+	color: white;
+	margin-right: calc(-50vw + 50%); 
+	margin-left: calc(-50vw + 50%);
 }
