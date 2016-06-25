@@ -125,3 +125,70 @@ body {
 .transporte-info {
 	align-self: flex-end;
 }
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.92);
+	height: 50px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	color: white;
+	justify-content: center;
+}
+
+.form {
+	padding: 0 20px;
+}
+
+.form .form-row {
+	padding: 10px;
+}
+
+input {
+	padding: 4px;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 40px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 0px;
+}
+
+.nom-ape{
+	display: flex;
+	justify-content: space-between;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+thead > tr {
+	background-color: #F5F5F5;
+}
+
+th {
+	height: 50px;
+}
+
+th, td {
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+tbody > tr:hover {
+	background-color: #DEDDDD;
+}
+
+.section-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
