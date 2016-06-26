@@ -191,4 +191,6 @@ tbody > tr:hover {
 .section-container {
 	padding-top: 50px;
 	padding-bottom: 50px;
+/*	margin-top: 50px;
+	margin-bottom: 50px;*/
 }
