@@ -1,7 +1,7 @@
 // SMOOTH SCROLL
 var navbarItems = document.getElementsByClassName('navbar-item');
 
-for (var i=0; i<navbarItems.length; i++){
+for (var i=0; i < navbarItems.length; i++){
 	navbarItems[i].addEventListener('click', function(e){
 
 		deleteActiveClass();
@@ -28,7 +28,7 @@ function getElementByIdAndScroll (name) {
 }
 
 function scrollToElement (element) {
-	var jump = parseInt(element.getBoundingClientRect().top * .2);
+	var jump = parseInt(element.getBoundingClientRect().top * .3);
 	document.body.scrollTop += jump;
 	document.documentElement.scrollTop += jump;
 
@@ -45,8 +45,6 @@ function scrollToElement (element) {
 
 
 // CHANGE ACTIVE ITEM
-window.addEventListener('scroll', changeMenuStyle);
-
 var cumulativeOffset = function(element) {
 	var top = 0;
 	do {
@@ -57,10 +55,12 @@ var cumulativeOffset = function(element) {
 	return top;
 };
 
-var offsetQuienSoy = cumulativeOffset(document.getElementById('quien-soy'));
-var offsetEquipo = cumulativeOffset(document.getElementById('equipo'));
-var offsetTransporte = cumulativeOffset(document.getElementById('transporte'));
+var offsetQuienSoy = cumulativeOffset(document.getElementById('quien-soy')) - 50;
+var offsetEquipo = cumulativeOffset(document.getElementById('equipo')) - 50;
+var offsetTransporte = cumulativeOffset(document.getElementById('transporte')) - 50;
 var navbar = document.getElementsByClassName('navbar')[0];
+
+window.addEventListener('scroll', changeMenuStyle);
 
 function changeMenuStyle(e) {
 	var previous;
@@ -75,6 +75,7 @@ function changeMenuStyle(e) {
 		deleteActiveClass();
 		document.querySelector('a[href="#"]').parentNode.classList.add('active');
 	} else if (window.pageYOffset >= offsetQuienSoy && window.pageYOffset < offsetEquipo) {
+		debugger;
 		if (!previous){
 			previous = 2;
 		} else if (previous == 2) {

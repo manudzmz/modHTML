@@ -47,7 +47,7 @@ body {
 }
 
 .navbar .navbar-list .navbar-item.active-reverse {
-	color: #101010;
+	color: #10101aaaaaaaaaaaaaaaaaaa0;
 	background-color: #F7F7F7;
 }
 
@@ -218,9 +218,8 @@ input[type=button], input[type=submit], input[type=reset] {
 	border-radius: 0px;
 }
 
-.nom-ape{
-	display: flex;
-	justify-content: space-between;
+#too-many-enemies{
+	display: none;
 }
 
 table {
