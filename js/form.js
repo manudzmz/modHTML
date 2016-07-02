@@ -1,5 +1,8 @@
 var form = document.getElementById('form-contact');
 
+var loadingButton = document.createElement('i');
+loadingButton.classList.add("fa", "fa-spinner", "fa-spin");
+
 var apellidosInput = document.getElementsByName("tienes_apellidos");
 var tooManyEnemies = document.getElementById('too-many-enemies');
 var ejercitoInput = document.getElementById('ejercito');
@@ -51,6 +54,7 @@ form.addEventListener('submit', function(e){
 	}
 
 	var fechaInput = document.getElementById('fecha');
+	var submitInput = document.getElementById('enviar');
 
 	if (inputNombre.checkValidity() == false) {
 		alert('Escribe tu nombre');
@@ -101,4 +105,11 @@ form.addEventListener('submit', function(e){
 		e.preventDefault();
 		return false;
 	}
+
+	submitInput.appendChild(loadingButton);
+	e.preventDefault();
+
+	setTimeout(function(){
+		submitInput.removeChild(loadingButton);
+	}, 1000);
 })
