@@ -5,6 +5,7 @@
 	<title>Batman</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<script src="js/modernizr-custom.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -36,7 +37,7 @@
 	<div class="container">
 		<section id="quien-soy" class="about-me section-container" >
 			<div class="batman-photo">
-				<video width="550" height="300" controls>
+				<video id="video-batman" width="550" height="300" controls>
 					<source src="video/batman-lego.mp4" type="video/mp4">
 				</video>
 			</div>
@@ -109,16 +110,16 @@
 			</div>
 		</section>
 
-		<section id="transporte" class="section-container">
+		<section id="transporte" class="transport section-container">
 			<div class="row-flex">
-				<article class="transporte-item">
+				<article class="transporte-item item-1">
 					<figure>
 						<img src="images/car.jpg" alt="Coche" class="transporte-img">
 						<figcaption><small>BatMóvil</small></figcaption>
 					</figure>
 					<p class="transporte-info">Fabricado en el año <time datetime="2005">2005</time> y se usó durante toda la trilogía.</p>
 				</article>
-				<article class="transporte-item">
+				<article class="transporte-item item-2">
 					<figure>
 						<img src="images/moto.jpg" alt="Moto" class="transporte-img">
 						<figcaption><small>Moto de batman</small></figcaption>
@@ -134,4 +135,5 @@
 </body>
 <script src="js/animation.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/fullscreen.js"></script>
 </html>
